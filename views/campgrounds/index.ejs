@@ -1,0 +1,12 @@
+<% include ../partials/header.ejs %>
+<a href='/campgrounds/new'>Adicionar novo campground</a>
+<%campgrounds.forEach(campground =>{%>
+  <h1><%=campground.name%></h1>
+<img src="<%= campground.image %>">
+<p><%=campground.description%></p>
+<a href="/campgrounds/<%=campground._id%>">Mais informações</a>
+<%})%>
+
+
+
+<% include ../partials/footer.ejs %>

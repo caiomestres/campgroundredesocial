@@ -4,7 +4,7 @@ const campgroundSchema = new Schema({
   name: String,
   image: String,
   description: String,
-  comment: [
+  comments: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Comment'
